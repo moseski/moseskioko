@@ -21,7 +21,7 @@ const Home = () => {
           transition={{ delay: 0.2, duration: 0.8 }}
         >
           <div className="profile-image-container">
-            <img src="/images/profile/profile-photo.jpg" alt="Moses Kioko" className="profile-image" />
+            <img src="/images/profile/profile-photo.jpeg" alt="Moses Kioko" className="profile-image" />
           </div>
         </motion.div>
         <motion.div className="content-section">

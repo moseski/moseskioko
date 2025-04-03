@@ -21,7 +21,7 @@
   color: var(--heading-color);
   margin: 0;
 }
-
+/* 
 .download-button {
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
-}
+} */
 
 .download-button:hover {
   background-color: rgba(96, 165, 250, 0.2);

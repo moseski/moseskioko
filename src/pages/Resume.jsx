@@ -29,7 +29,7 @@ const Resume = () => {
             whileTap={{ scale: 0.95 }}
           >
             <Download size={18} />
-            Download CV
+            {/* Download CV */}
           </motion.a>
         </motion.div>
 

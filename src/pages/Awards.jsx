@@ -11,7 +11,7 @@ const awards = [
     year: 2024,
     description:
       "Recognized for developing an innovative anomaly detection system with self-healing and vaccination capabilities for enhanced cybersecurity protection.",
-    image: "/images/awards/hackathon-2024.jpg",
+    image: "/images/awards/hackathon-2024.jpeg",
     icon: Trophy,
   },
 ]

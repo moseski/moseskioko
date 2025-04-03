@@ -12,7 +12,7 @@ const projects = [
       "Developed a comprehensive healthcare management system to streamline patient care, medical records, and hospital administration processes.",
     technologies: ["React", "Node.js", "Express", "MongoDB", "Socket.io"],
     link: "https://github.com/moseskioko/e-health-system",
-    image: "/images/projects/e-health.png",
+    image: "/images/projects/e-health.png", // Correct path to the image
     demoLink: "https://e-health-demo.vercel.app",
     details:
       "This E-Health Management System provides a unified platform for healthcare providers to manage patient records, appointments, prescriptions, and billing. The system features real-time notifications for critical updates, secure patient data storage compliant with healthcare regulations, and an intuitive dashboard for healthcare professionals to monitor patient progress and treatment plans.",
@@ -23,7 +23,7 @@ const projects = [
       "Created a platform connecting farmers and buyers with predictive market analysis for agricultural products based on supply and demand trends.",
     technologies: ["Django", "React.js", "PostgreSQL", "TensorFlow", "Chart.js"],
     link: "https://github.com/moseskioko/agri-marketplace",
-    image: "/images/projects/agri-marketplace.png",
+    image: "/images/projects/agri-marketplace.png", // Correct path to the image
     demoLink: "https://agri-marketplace-demo.vercel.app",
     details:
       "The Smart Agricultural Marketplace is designed to empower farmers with data-driven insights and direct market access. The platform features predictive pricing models for various crops, supply chain tracking, weather forecasting integration, and a direct communication channel between farmers and buyers. Machine learning algorithms analyze historical data to provide accurate price forecasts, helping farmers make informed decisions about planting and harvesting.",
@@ -34,12 +34,12 @@ const projects = [
       "Built an interactive dashboard for detecting and visualizing anomalies in network traffic and system behavior for enhanced cybersecurity monitoring.",
     technologies: ["Python", "Flask", "React", "D3.js", "TensorFlow", "Scikit-learn"],
     link: "https://github.com/moseskioko/anomaly-detection",
-    image: "/images/projects/cybersec.png",
+    image: "/images/projects/cybersec.png", // Correct path to the image
     demoLink: "https://anomaly-detection-demo.vercel.app",
     details:
       "This Anomaly Detection Analysis Dashboard provides real-time monitoring and visualization of network and system anomalies. The system employs advanced machine learning algorithms to identify unusual patterns that may indicate security breaches or system failures. Features include customizable alert thresholds, historical trend analysis, automated incident response recommendations, and comprehensive reporting tools for security teams.",
   },
-]
+];
 
 const Projects = () => {
   const [expandedProject, setExpandedProject] = useState(null)
@@ -158,7 +158,7 @@ const Projects = () => {
         </motion.div>
         <motion.div className="view-more" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}>
           <motion.a
-            href="https://github.com/moseskioko"
+            href="https://github.com/moseski"
             target="_blank"
             rel="noopener noreferrer"
             className="view-more-button"
