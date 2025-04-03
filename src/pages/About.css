@@ -1,0 +1,42 @@
+.about {
+  min-height: 100vh;
+  padding: 6rem 2rem 2rem;
+  background-color: rgba(42, 31, 125, 0.8);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about h1 {  
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;  
+}
+
+.about-text ul {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.about-text li {
+  margin-bottom: 0.5rem;  
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding-top: 5rem;
+  }
+
+  .about h1 {
+    font-size: 2rem;
+  }
+}
+
