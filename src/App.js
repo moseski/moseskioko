@@ -1,15 +1,37 @@
+"use client"
+
 import { useRef, useEffect } from "react"
-import { motion, useScroll, useSpring } from "framer-motion"
+import { motion, useScroll, useSpring, useInView } from "framer-motion"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Skills from "./pages/Skills"
 import Projects from "./pages/Projects"
-import Resume from "./pages/Resume"
 import Awards from "./pages/Awards"
+import Resume from "./pages/Resume"
 import Contact from "./pages/Contact"
 import "./App.css"
+
+// Animated section wrapper component
+const AnimatedSection = ({ id, children }) => {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: false, amount: 0.2 })
+
+  return (
+    <section id={id} className="section-wrapper" ref={ref}>
+      <motion.div
+        style={{
+          opacity: isInView ? 1 : 0,
+          transform: isInView ? "translateY(0)" : "translateY(50px)",
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+        }}
+      >
+        {children}
+      </motion.div>
+    </section>
+  )
+}
 
 function App() {
   const containerRef = useRef(null)
@@ -44,27 +66,27 @@ function App() {
       <Navbar />
       <motion.div className="progress-bar" style={{ scaleX }} />
       <div className="scroll-container" ref={containerRef}>
-        <section id="home" className="section-wrapper">
+        <AnimatedSection id="home">
           <Home />
-        </section>
-        <section id="about" className="section-wrapper">
+        </AnimatedSection>
+        <AnimatedSection id="about">
           <About />
-        </section>
-        <section id="skills" className="section-wrapper">
+        </AnimatedSection>
+        <AnimatedSection id="skills">
           <Skills />
-        </section>
-        <section id="projects" className="section-wrapper">
+        </AnimatedSection>
+        <AnimatedSection id="projects">
           <Projects />
-        </section>
-        <section id="awards" className="section-wrapper">
+        </AnimatedSection>
+        <AnimatedSection id="awards">
           <Awards />
-        </section>
-        <section id="resume" className="section-wrapper">
+        </AnimatedSection>
+        <AnimatedSection id="resume">
           <Resume />
-        </section>
-        <section id="contact" className="section-wrapper">
+        </AnimatedSection>
+        <AnimatedSection id="contact">
           <Contact />
-        </section>
+        </AnimatedSection>
       </div>
       <Footer />
     </div>

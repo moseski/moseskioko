@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ExternalLink, Github, ChevronDown, ChevronUp } from "lucide-react"
@@ -5,37 +7,37 @@ import "./Projects.css"
 
 const projects = [
   {
-    title: "AI-Powered Personal Assistant",
+    title: "E-Health Management System",
     description:
-      "Developed a smart personal assistant using natural language processing and machine learning algorithms to help users manage their daily tasks and schedules.",
-    technologies: ["Python", "TensorFlow", "Flask", "React"],
-    link: "https://github.com/moseskioko/ai-assistant",
-    image: "/placeholder.svg?height=300&width=500",
-    demoLink: "https://ai-assistant-demo.vercel.app",
+      "Developed a comprehensive healthcare management system to streamline patient care, medical records, and hospital administration processes.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Socket.io"],
+    link: "https://github.com/moseskioko/e-health-system",
+    image: "/images/projects/e-health.png",
+    demoLink: "https://e-health-demo.vercel.app",
     details:
-      "This AI-powered personal assistant leverages advanced NLP techniques to understand and respond to user queries. It integrates with various APIs to provide real-time information on weather, news, and more. The assistant can also manage calendars, set reminders, and learn from user interactions to provide increasingly personalized assistance over time.",
+      "This E-Health Management System provides a unified platform for healthcare providers to manage patient records, appointments, prescriptions, and billing. The system features real-time notifications for critical updates, secure patient data storage compliant with healthcare regulations, and an intuitive dashboard for healthcare professionals to monitor patient progress and treatment plans.",
   },
   {
-    title: "E-commerce Platform",
+    title: "Smart Agricultural Marketplace",
     description:
-      "Built a full-stack e-commerce platform with features like user authentication, product catalog, shopping cart, and payment integration.",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe API"],
-    link: "https://github.com/moseskioko/ecommerce-platform",
-    image: "/placeholder.svg?height=300&width=500",
-    demoLink: "https://ecommerce-platform-demo.vercel.app",
+      "Created a platform connecting farmers and buyers with predictive market analysis for agricultural products based on supply and demand trends.",
+    technologies: ["Django", "React.js", "PostgreSQL", "TensorFlow", "Chart.js"],
+    link: "https://github.com/moseskioko/agri-marketplace",
+    image: "/images/projects/agri-marketplace.png",
+    demoLink: "https://agri-marketplace-demo.vercel.app",
     details:
-      "This e-commerce platform offers a seamless shopping experience with features such as real-time inventory management, user reviews and ratings, and personalized product recommendations. The backend uses GraphQL for efficient data fetching, and the Stripe API ensures secure payment processing. The platform also includes an admin dashboard for easy product and order management.",
+      "The Smart Agricultural Marketplace is designed to empower farmers with data-driven insights and direct market access. The platform features predictive pricing models for various crops, supply chain tracking, weather forecasting integration, and a direct communication channel between farmers and buyers. Machine learning algorithms analyze historical data to provide accurate price forecasts, helping farmers make informed decisions about planting and harvesting.",
   },
   {
-    title: "Climate Change Visualization Tool",
+    title: "Anomaly Detection Analysis Dashboard",
     description:
-      "Created an interactive data visualization tool to help people understand the impacts of climate change using real-time data from various sources.",
-    technologies: ["D3.js", "React", "Node.js", "Python (data processing)"],
-    link: "https://github.com/moseskioko/climate-viz",
-    image: "/placeholder.svg?height=300&width=500",
-    demoLink: "https://climate-viz-demo.vercel.app",
+      "Built an interactive dashboard for detecting and visualizing anomalies in network traffic and system behavior for enhanced cybersecurity monitoring.",
+    technologies: ["Python", "Flask", "React", "D3.js", "TensorFlow", "Scikit-learn"],
+    link: "https://github.com/moseskioko/anomaly-detection",
+    image: "/images/projects/cybersec.png",
+    demoLink: "https://anomaly-detection-demo.vercel.app",
     details:
-      "This visualization tool combines data from multiple climate research institutions to create compelling, interactive graphics that illustrate the effects of climate change. Users can explore historical trends, future projections, and the impact of various factors on global climate patterns. The tool also includes educational resources and actionable steps to combat climate change.",
+      "This Anomaly Detection Analysis Dashboard provides real-time monitoring and visualization of network and system anomalies. The system employs advanced machine learning algorithms to identify unusual patterns that may indicate security breaches or system failures. Features include customizable alert thresholds, historical trend analysis, automated incident response recommendations, and comprehensive reporting tools for security teams.",
   },
 ]
 
@@ -172,83 +174,4 @@ const Projects = () => {
 }
 
 export default Projects
-
-
-
-
-// import { motion } from "framer-motion"
-// import "./Projects.css"
-
-// const projects = [
-//   {
-//     title: "AI-Powered Personal Assistant",
-//     description:
-//       "Developed a smart personal assistant using natural language processing and machine learning algorithms to help users manage their daily tasks and schedules.",
-//     technologies: ["Python", "TensorFlow", "Flask", "React"],
-//     link: "https://github.com/moseskioko/ai-assistant",
-//   },
-//   {
-//     title: "E-commerce Platform",
-//     description:
-//       "Built a full-stack e-commerce platform with features like user authentication, product catalog, shopping cart, and payment integration.",
-//     technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe API"],
-//     link: "https://github.com/moseskioko/ecommerce-platform",
-//   },
-//   {
-//     title: "Climate Change Visualization Tool",
-//     description:
-//       "Created an interactive data visualization tool to help people understand the impacts of climate change using real-time data from various sources.",
-//     technologies: ["D3.js", "React", "Node.js", "Python (data processing)"],
-//     link: "https://github.com/moseskioko/climate-viz",
-//   },
-// ]
-
-// const Projects = () => {
-//   return (
-//     <motion.div
-//       className="projects"
-//       initial={{ opacity: 0 }}
-//       animate={{ opacity: 1 }}
-//       exit={{ opacity: 0 }}
-//       transition={{ duration: 0.5 }}
-//     >
-//       <div className="projects-content">
-//         <motion.h1 initial={{ y: -50 }} animate={{ y: 0 }} transition={{ delay: 0.2, type: "spring", stiffness: 120 }}>
-//           My Projects
-//         </motion.h1>
-//         <motion.div
-//           className="projects-grid"
-//           initial={{ opacity: 0 }}
-//           animate={{ opacity: 1 }}
-//           transition={{ delay: 0.4, duration: 0.8 }}
-//         >
-//           {projects.map((project, index) => (
-//             <motion.div
-//               key={index}
-//               className="project-card"
-//               initial={{ y: 50, opacity: 0 }}
-//               animate={{ y: 0, opacity: 1 }}
-//               transition={{ delay: 0.2 * (index + 1) }}
-//             >
-//               <h2>{project.title}</h2>
-//               <p>{project.description}</p>
-//               <div className="technologies">
-//                 {project.technologies.map((tech, i) => (
-//                   <span key={i} className="tech-tag">
-//                     {tech}
-//                   </span>
-//                 ))}
-//               </div>
-//               <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
-//                 View Project
-//               </a>
-//             </motion.div>
-//           ))}
-//         </motion.div>
-//       </div>
-//     </motion.div>
-//   )
-// }
-
-// export default Projects
 

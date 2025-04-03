@@ -1,3 +1,5 @@
+"use client"
+
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { Menu } from "lucide-react"
@@ -45,7 +47,7 @@ const Navbar = () => {
           closed: { opacity: isMobile ? 0 : 1, x: isMobile ? "100%" : 0 },
         }}
       >
-        {["home", "about", "skills", "projects", "awards", "contact"].map((item) => (
+        {["home", "about", "skills", "projects", "awards", "resume", "contact"].map((item) => (
           <motion.li key={item} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <button onClick={() => scrollTo(item)}>{item.charAt(0).toUpperCase() + item.slice(1)}</button>
           </motion.li>

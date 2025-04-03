@@ -4,6 +4,9 @@
   right: 0;
   z-index: 1000;
   padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navbar-toggle {
@@ -18,10 +21,13 @@
 .navbar-links {
   display: flex;
   list-style: none;
-  background-color: rgba(23, 42, 69, 0.7);
+  background-color: var(--card-bg);
   backdrop-filter: blur(10px);
   padding: 0.5rem 1rem;
   border-radius: 2rem;
+  margin: 0;
+  border: 1px solid var(--card-border);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-links li {
@@ -35,6 +41,7 @@
   font-weight: bold;
   cursor: pointer;
   transition: color 0.3s ease;
+  font-size: 1rem;
 }
 
 .navbar-links button:hover {
@@ -55,10 +62,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(23, 42, 69, 0.9);
+    background-color: var(--card-bg);
     backdrop-filter: blur(10px);
     transition: transform 0.3s ease-in-out;
     transform: translateX(100%);
+    border-left: 1px solid var(--card-border);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
   }
 
   .navbar-links.mobile.open {

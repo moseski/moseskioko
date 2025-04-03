@@ -1,3 +1,5 @@
+"use client"
+
 import { motion } from "framer-motion"
 import "./About.css"
 
@@ -21,28 +23,55 @@ const About = () => {
           transition={{ delay: 0.4, duration: 0.8 }}
         >
           <p>
-          Hello! I'm Moses Kioko, a fourth-year Software Engineering student at Murang'a University of Technology and a 
-          passionate Full Stack Developer with a strong enthusiasm for AI, Machine Learning, and Data Science.
-          With a keen interest in emerging technologies, I strive to create innovative solutions that make a positive 
-          impact on the world.
+            I am a passionate software engineer with a keen interest in solving complex problems through technology.
+            Over the past two years, I have dedicated myself to building a diverse portfolio of full-stack projects,
+            demonstrating my skills in front-end and back-end development, data analysis, and system optimization.
           </p>
+
+          <h2>Technical Expertise</h2>
           <p>
-          My journey in tech began in 2021 at Murang'a University of Technology, where I am currently pursuing my 
-          Bachelor's degree in Software Engineering. Throughout my studies, I have been continuously expanding my 
-          skills and knowledge, staying up-to-date with the latest trends and best practices in software development.
+            My journey in software engineering has equipped me with a strong foundation in both front-end and back-end
+            development:
           </p>
-          <p>I specialize in:</p>
+
           <ul>
-            <li>Full Stack Web Development (React, Node.js, Express, MongoDB)</li>
-            <li>Mobile App Development (React Native, Flutter)</li>
-            <li>Machine Learning and AI (TensorFlow, PyTorch)</li>
-            <li>Cloud Computing (AWS, Google Cloud Platform)</li>
-            <li>DevOps and CI/CD pipelines</li>
+            <li>
+              <strong>Front-End Development</strong> – I specialize in creating engaging and responsive user interfaces
+              using HTML, CSS, JavaScript, and modern libraries/frameworks like React.js and Tailwind CSS.
+            </li>
+            <li>
+              <strong>Back-End Development</strong> – I have honed my skills in Python, developing efficient and
+              scalable server-side applications. My expertise extends to database management with MySQL, PostgreSQL, and
+              MongoDB, ensuring data integrity and seamless integration across different system components.
+            </li>
+            <li>
+              <strong>Data Science & Analytics</strong> – I am passionate about data analysis and visualization,
+              leveraging tools like Power BI, Excel, and Python to extract insights and drive data-driven
+              decision-making.
+            </li>
           </ul>
+
+          <h2>Educational Pursuits</h2>
           <p>
-            When I'm not coding, you can find me exploring new hiking trails, reading about the latest tech innovations,
-            or volunteering at local STEM education initiatives. I'm always excited to take on new challenges and
-            collaborate on projects that push the boundaries of what's possible with technology.
+            I am currently pursuing a Bachelor of Science in Software Engineering at Murang'a University of Technology
+            in Kenya, with an expected graduation in August 2025. My academic journey has not only sharpened my
+            technical skills but has also instilled in me a problem-solving mindset, strong teamwork abilities, and a
+            deep appreciation for innovation.
+          </p>
+
+          <h2>Future Goals</h2>
+          <p>
+            As I advance in my career, my goal is to secure an internship where I can apply my knowledge in a hands-on
+            environment, learn from experienced professionals, and contribute meaningfully to real-world projects. I am
+            eager to explore cutting-edge software engineering practices, collaborate with teams, and stay ahead of
+            industry trends.
+          </p>
+
+          <h2>Let's Connect!</h2>
+          <p>
+            If you're looking for a motivated and adaptable software engineer who is passionate about building impactful
+            solutions, let's connect! I'd love to explore opportunities where my skills and enthusiasm can contribute to
+            your team's success.
           </p>
         </motion.div>
       </div>

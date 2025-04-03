@@ -1,24 +1,39 @@
 .about {
-  min-height: 100vh;
-  padding: 6rem 2rem 2rem;
-  background-color: rgba(42, 31, 125, 0.8);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .about-content {
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
 }
 
-.about h1 {  
-  margin-bottom: 1rem;
+.about h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  color: var(--heading-color);
   text-align: center;
+}
+
+.about h2 {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+  color: var(--accent-color);
+}
+
+.about-text {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--card-border);
 }
 
 .about-text p {
   margin-bottom: 1.5rem;
-  line-height: 1.6;  
+  line-height: 1.6;
+  color: var(--text-color);
 }
 
 .about-text ul {
@@ -27,16 +42,36 @@
 }
 
 .about-text li {
-  margin-bottom: 0.5rem;  
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+.about-text li::marker {
+  color: var(--accent-color);
+}
+
+.about-text strong {
+  color: var(--heading-color);
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
   .about {
-    padding-top: 5rem;
+    padding: 1rem;
   }
 
   .about h1 {
     font-size: 2rem;
+  }
+
+  .about h2 {
+    font-size: 1.25rem;
+  }
+
+  .about-text {
+    padding: 1.5rem;
   }
 }
 
